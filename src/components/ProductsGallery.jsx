@@ -3,29 +3,40 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useContext } from "react";
 import AppContext from "../context/AppContext";
+import { formatPrice } from "../utils";
 
 const slides = [
   {
     id: "1",
     title: "Producto 1",
-    price: "$380.000",
-    priceOld: "$680.000"
+    price: 380000,
+    priceOld: 680000
   },
   {
     id: "2",
     title: "Producto 2",
-    price: "$380.000"
+    price: 300000
   },
   {
     id: "3",
     title: "Producto 3",
-    description: "Producto 3",
-    priceOld: "$740.000"
+    price: 580000,
+    priceOld: 740000
   },
   {
     id: "4",
     title: "Producto 4",
-    price: "$380.000"
+    price: 3800000
+  },
+  {
+    id: "5",
+    title: "Producto 5",
+    price: 300000
+  },
+  {
+    id: "6",
+    title: "Producto 6",
+    price: 280000
   }
 ];
 
@@ -80,10 +91,10 @@ export default function ProductsGallery() {
             <h3>{item.title}</h3>
             {item.priceOld && (
               <p className="line-through text-sm text-red-500">
-                {item.priceOld}
+                {formatPrice(item.priceOld)}
               </p>
             )}
-            <p>$380.000</p>
+            <p>{formatPrice(item.price)}</p>
             <p>Exclusivo malva</p>
 
             {/* boton de comprar */}
