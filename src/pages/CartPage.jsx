@@ -47,11 +47,11 @@ export default function CartPage() {
     e.preventDefault();
 
     if (coupon.text.trim() === "") {
-      toast.error("El cupón no puede estar vacío");
+      return toast.error("El cupón no puede estar vacío");
     }
 
     if (coupon.text.trim() !== "WelcomeMALVA") {
-      toast.error("El cupón no es válido");
+      return toast.error("El cupón no es válido");
     }
 
     if (coupon.text.trim() === "WelcomeMALVA") {
