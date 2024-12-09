@@ -26,7 +26,7 @@ const slides = [
   {
     id: "4",
     title: "Producto 4",
-    price: 3800000
+    price: 380000
   },
   {
     id: "5",

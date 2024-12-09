@@ -10,6 +10,7 @@ import MainLayout from "./Layouts/MainLayout.jsx";
 /* context */
 import { AppProvider } from "./context/AppContext.jsx";
 import CartPage from "./pages/CartPage.jsx";
+import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -22,6 +23,8 @@ createRoot(document.getElementById("root")).render(
           </Route>
         </Routes>
       </BrowserRouter>
+
+      <Toaster />
     </AppProvider>
   </StrictMode>
 );

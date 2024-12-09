@@ -4,7 +4,7 @@ import AppContext from "../context/AppContext";
 import { Link, useLocation } from "react-router";
 
 export default function Header() {
-  const { openSidebar, setOpenSidebar } = useContext(AppContext);
+  const { openSidebar, products, setOpenSidebar } = useContext(AppContext);
 
   const [lightHeader, setLigthHeader] = useState(false);
   const location = useLocation();
@@ -122,7 +122,7 @@ export default function Header() {
             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
           </svg>
 
-          <Link to="/cart">
+          <Link to="/cart" className="block relative">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -141,6 +141,11 @@ export default function Header() {
               <path d="M17 17h-11v-14h-2" />
               <path d="M6 5l14 1l-1 7h-13" />
             </svg>
+            {products.length > 0 && (
+              <span className="absolute bottom-[-45%] -right-[40%] text-sm bg-black text-white px-[5px] rounded-full text-[10px]">
+                {products.length}
+              </span>
+            )}
           </Link>
         </div>
       </div>
