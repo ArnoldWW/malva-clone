@@ -179,11 +179,11 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Tu email"
-                className="p-2 bg-transparent border-neutral-800 border flex-1"
+                className="p-2 bg-transparent border-neutral-700 border flex-1"
               />
               <button
                 type="submit"
-                className="bg-neutral-800 text-white p-2 border border-neutral-800"
+                className="bg-neutral-700 text-white p-2 border border-neutral-700"
               >
                 Suscribirme
               </button>
@@ -199,7 +199,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-[95%] mx-auto flex justify-between items-center border-t border-neutral-800 py-2">
+      <div className="w-[95%] mx-auto flex justify-between items-center border-t border-neutral-700 py-2">
         <div className="md:flex gap-5 hidden">
           |<p>Politica de tratamiento de datos</p> |
           <p> Terminos y condiciones</p> | <p>SIC</p>

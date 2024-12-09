@@ -39,10 +39,10 @@ export default function Header() {
   return (
     <header
       className={`${
-        lightHeader ? "bg-white border-b" : "bg-transparent border-none"
+        lightHeader ? "bg-white" : "bg-transparent border-none"
       } fixed top-0 left-0 z-50 w-full transition-colors`}
     >
-      <div className=" bg-white text-sm">
+      <div className=" bg-white text-sm border-b">
         <div className="w-[98%] mx-auto">
           <a
             href="#"
