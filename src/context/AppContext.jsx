@@ -7,6 +7,12 @@ const AppProvider = ({ children }) => {
   /* estado del sidebar */
   const [openSidebar, setOpenSidebar] = useState(false);
 
+  /* estado del cupon */
+  const [coupon, setCoupon] = useState({
+    text: "",
+    valid: false
+  });
+
   /* array de productos */
   const [products, setProducts] = useState([]);
 
@@ -52,10 +58,12 @@ const AppProvider = ({ children }) => {
       value={{
         openSidebar,
         products,
+        coupon,
         setOpenSidebar,
         addProductToCart,
         removeProductFromCart,
-        decreaseProductQuantity
+        decreaseProductQuantity,
+        setCoupon
       }}
     >
       {children}
