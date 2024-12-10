@@ -122,7 +122,11 @@ export default function Header() {
             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
           </svg>
 
-          <Link to="/cart" className="block relative">
+          <Link
+            to="/cart"
+            className="block relative"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}

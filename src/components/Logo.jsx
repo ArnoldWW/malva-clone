@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Logo() {
   return (
-    <Link to="/">
+    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
       <svg
         width="100"
         height="70"
