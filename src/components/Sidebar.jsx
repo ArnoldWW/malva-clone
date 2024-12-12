@@ -50,7 +50,7 @@ const linksMenuBrands = [
 export default function Sidebar() {
   const { openSidebar, setOpenSidebar } = useContext(AppContext);
 
-  const [activeLink, setActiveLink] = useState(1);
+  const [activeTab, setActiveTab] = useState(1);
 
   const handledSidebar = () => {
     setOpenSidebar(false);
@@ -123,20 +123,20 @@ export default function Sidebar() {
                   ? "bg-neutral-100 border-b border-black"
                   : ""
               }`}
-              onClick={() => setActiveLink(tab.id)}
+              onClick={() => setActiveTab(tab.id)}
             >
               {tab.text}
             </button>
           ))}
         </div>
 
-        {activeLink === 1 && <Menu links={linksMenuMujer} />}
+        {activeTab === 1 && <Menu links={linksMenuMujer} />}
 
-        {activeLink === 2 && <Menu links={linksMenuHombre} />}
+        {activeTab === 2 && <Menu links={linksMenuHombre} />}
 
-        {activeLink === 3 && <Menu links={linksMenuBrands} />}
+        {activeTab === 3 && <Menu links={linksMenuBrands} />}
 
-        {activeLink === 4 && <Menu links={linksMenuBrands} />}
+        {activeTab === 4 && <Menu links={linksMenuBrands} />}
       </div>
     </div>
   );
