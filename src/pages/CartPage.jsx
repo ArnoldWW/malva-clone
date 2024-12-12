@@ -1,9 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router";
 import AppContext from "../context/AppContext";
 import { formatPrice } from "../utils";
 import CartItem from "../components/CartItem";
-import toast from "react-hot-toast";
 import CouponForm from "../components/CouponForm";
 
 const detailsOrder = [
