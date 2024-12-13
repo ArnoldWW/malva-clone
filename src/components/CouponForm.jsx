@@ -28,16 +28,16 @@ export default function CouponForm() {
       className="flex flex-col w-full justify-between"
       onSubmit={handledCoupon}
     >
-      <div className="flex items-center">
+      <div className="md:grid md:grid-cols-3">
         <input
           type="text"
           placeholder="Cupón de descuento"
-          className="p-2 border border-neutral-800 flex-1"
+          className="p-2 border border-neutral-800 col-span-2 w-full md:auto"
           value={coupon.text}
           onChange={(e) => setCoupon({ ...coupon, text: e.target.value })}
         />
         <button
-          className="block bg-neutral-800 text-white border border-neutral-800 px-2 h-full"
+          className="bg-neutral-800 text-white p-2 w-full md:w-auto"
           type="submit"
         >
           Aplicar
