@@ -119,7 +119,7 @@ export default function Sidebar() {
             <button
               key={tab.id}
               className={`py-5 w-full  hover:bg-neutral-50 ${
-                activeLink === tab.id
+                activeTab === tab.id
                   ? "bg-neutral-100 border-b border-black"
                   : ""
               }`}
