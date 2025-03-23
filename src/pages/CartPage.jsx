@@ -9,18 +9,18 @@ const detailsOrder = [
   {
     title: "Detalles de la compra",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic."
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic.",
   },
   {
     title: "Metodos de pago",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic."
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic.",
   },
   {
     title: "Envios y devoluciones",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic."
-  }
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic.",
+  },
 ];
 
 export default function CartPage() {
@@ -29,7 +29,7 @@ export default function CartPage() {
     products,
     removeProductFromCart,
     addProductToCart,
-    decreaseProductQuantity
+    decreaseProductQuantity,
   } = useContext(AppContext);
 
   /* total a pagar */
